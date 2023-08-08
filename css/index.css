@@ -1,0 +1,139 @@
+header{
+    background-color: red;
+    position: fixed;
+    width: 100vw;
+    left: 0em;
+    top: 0em;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Height du header */
+
+.h_header1{
+    height: 5em;
+    transition: .5s;
+}
+.h_header2{
+    height: 17em;
+    transition: .5s;
+}
+
+/* Ensemble : pp mascotte renard + bouton menu */
+
+.elem_bouton{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: relative;
+    top: .25em;
+}
+
+.b_sections_menu{
+    background-color: aqua;
+    height: 4em;
+    width: 98vw;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.texte_header{
+    font-size: 2em;
+    position: absolute;
+    left: 1em;
+    text-decoration: none;
+}
+
+.b_men_inv1{
+    background-color: transparent;
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    border-radius: .7em;
+}
+.b_men_inv2{
+    background-color: transparent;
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    border-radius: .7em;
+}
+.none{
+    display: none;
+}
+
+.bouton_menu{
+    width: 4.5em;
+    height: 4.5em;
+    background-color: blue;
+    position: relative;
+    right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .7em;
+}
+.mini_barre{
+    background-color: blanchedalmond;
+    width: 3.3em;
+    height: .3em;
+    border-radius: 1em;
+}
+.espace_barre{
+    margin-top: .7em;
+}
+
+.boutons_gauche{
+    display: flex;
+}
+
+.mascotte{
+    background-color: green;
+    /*
+    background-image: url('../images/pp\ renard.svg');
+    */
+    background-size: cover;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 10em;
+    position: relative;
+    left: 1em;
+}
+.bouton_acc{
+    background-color: black;
+    width: 4.5em;
+    height: 4.5em;
+    position: relative;
+    left: 2.5em;
+}
+
+.espace_vide{
+    height: 10em;
+    background-color: transparent;
+}
+
+h1{
+    background-color: yellow;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+
+.section{
+    background-color: chartreuse;
+    width: 90vw;
+    height: 5em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ens_section{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
