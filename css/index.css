@@ -167,11 +167,11 @@ h1{
     font-size: 2.5em;
 }
 .rotate0{
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     transition: .5s;
 }
 .rotate180{
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     transition: .5s;
 }
 

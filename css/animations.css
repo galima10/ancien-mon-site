@@ -7,6 +7,7 @@ header{
     top: 0em;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .b_retour{
@@ -15,12 +16,14 @@ header{
     width: 4em;
 }
 .b_acc{
-    background-color: black;
+    background-color: blue;
     height: 2.6em;
     width: 4em;
 }
 
-
+body{
+    background-color: black;
+}
 
 h1{
     margin-top: 5em;
@@ -31,17 +34,96 @@ h1{
 
 .ens_bibli{
     position: relative;
-    left: 0em;
-    display: flex;
-}
-.description{
-    background-color: blueviolet;
-    height: 40em;
-    width: 20em;
-
+    width: 1000px;
+    height: 562.5px;
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10em;
 }
 .etagere{
+    /*
     background-color: blue;
-    height: 40em;
-    width: 90vw;
+    */
+    background-image: url('../images/etagere.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.titreEtagere{
+    position: absolute;
+    background-color: transparent;
+    width: 62%;
+    top: -.25em;
+}
+
+.description{
+    opacity: .8;
+    border: .1em solid white;
+    width: 25em;
+    height: 33em;
+    position: absolute;
+    right: 2em;
+    border-radius: 2em;
+}
+.ouvrage1{
+    position: relative;
+    width: 95%;
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+.contenu{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    color: white;
+}
+.texte_contenu{
+    font-size: 1.2em;
+}
+.image_ouvrage{
+    background-color: transparent;
+    width: 95%;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.encadre{
+    position: absolute;
+}
+.enc1{
+    position: absolute;
+    background-color: transparent;
+    width: 2.59em;
+    height: 13.7em;
+    left: 16.2em;
+    bottom: 17.3em;
+    cursor: pointer;
+}
+.encBorder:hover{
+    border: .1em solid white;
+    transition: .3s;
+}
+.encBorder:not(:hover){
+    border: .1em solid transparent;
+    transition: .3s;
+}
+
+.op0{
+    transition-delay: 1s;
+    opacity: 0;
+    transition: 2s;
+}
+.op1{
+    transition-delay: 1s;
+    opacity: 1;
+    transition: 2s;
 }
