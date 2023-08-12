@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 header{
     background-color: red;
     height: 2.6em;
@@ -7,6 +11,7 @@ header{
     top: 0em;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .b_retour{
@@ -20,37 +25,254 @@ header{
     width: 4em;
 }
 
-h1{
+.h1{
     margin-top: 5em;
     background-color: yellow;
     text-align: center;
     font-size: 3em;
+    margin-bottom: 3em;
 }
 
+.ens_resume{
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    left: -.5em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.imgResume{
+    background-color: aqua;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.imgLivre{
+    position: relative;
+    left: -40%;
+}
+.resume{
+    background-color: chartreuse;
+    width: 50vw;
+}
+.contenuResume{
+    background-color: red;
+    width: 90%;
+    font-size: 1.5em;
+    position: relative;
+    left: -30%;
+    top: 5%
+}
+
+.diapDesc{
+    position: relative;
+}
+.ens_desc{
+    position: relative;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.desc{
+    position: relative;
+    top: 0em;
+    background-color: yellow;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.h_desc1{
+    height: 0em;
+    transition: .5s;
+}
+.h_desc2{
+    height: 15em;
+    transition: .5s;
+}
 .diapo{
     border: .2em solid black;
-    height: 5em;
+    height: 20em;
     position: relative;
-    width: 1000px;
+    width: 95vw;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 .slides{
     position: relative;
-    width: 300%;
+    width: 285vw;
 }
 .slide{
-    width: 1000px;
+    position: relative;
+    width: 95vw;
     float: left;
+    height: 20em;
 }
 .slide1{
     background-color: blue;
-    height: 5em;
 }
 .slide2{
     background-color: red;
-    height: 5em;
 }
 .slide3{
     background-color: chartreuse;
-    height: 5em;
+}
+
+.ens_diapo{
+    background-color: transparent;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+}
+.b_diap_g{
+    position: absolute;
+    left: 0em;
+    width: 2.5em;
+    height: 10em;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.b_diap_d{
+    position: absolute;
+    right: 0em;
+    width: 2.5em;
+    height: 10em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.b_diap_d:hover{
+    opacity: 1;
+    background-color: transparent;
+    transition: .5s;
+    transform: rotate(180deg) scale(1.2);
+}
+.b_diap_d:not(:hover){
+    opacity: .3;
+    background-color: transparent;
+    transition: .5s;
+}
+
+.b_diap_g:hover{
+    opacity: 1;
+    background-color: transparent;
+    transition: .5s;
+    transform: scale(1.2);
+}
+.b_diap_g:not(:hover){
+    opacity: .3;
+    background-color: transparent;
+    transition: .5s;
+}
+
+.DiapPlus{
+    position: absolute;
+    right: 3em;
+    bottom: .7em;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    border-radius: 2em;
+}
+.DiapPlus:hover{
+    background-color: aqua;
+    transition: .5s;
+    transform: scale(1.05);
+}
+.DiapPlus:not(:hover){
+    background-color: black;
+    transition: .5s;
+}
+
+.BtnLireEp{
+    position: absolute;
+    background-color: blueviolet;
+    width: 10em;
+    height: 3em;
+    right: 10em;
+    bottom: .7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.textBtnLireEp{
+    font-size: 1.2em;
+    background-color: red;
+    display: inline;
+}
+.BtnLireEp:hover{
+    background-color: aqua;
+    transition: .5s;
+    transform: scale(1.05);
+}
+.BtnLireEp:not(:hover){
+    background-color: black;
+    transition: .5s;
+}
+
+.episode{
+    background-color: brown;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.EpDesc{
+    background-color: blueviolet;
+    height: 100%;
+    width: 40%
+}
+.EpImg{
+    background-color: yellowgreen;
+    height: 100%;
+    width: 70%
+}
+
+h2{
+    
+    font-size: 2em;
+}
+
+.btnLire{
+    margin-top: 2em;
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12em;
+    height: 2.5em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.btnLire:hover{
+    background-color: blueviolet;
+}
+.btnLire:not(:hover){
+    background-color: red;
+}
+.t_blire{
+    background-color: aqua;
+    position: relative;
+    margin-left: .5em;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    background-color: blue;
 }

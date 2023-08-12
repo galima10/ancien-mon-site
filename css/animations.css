@@ -7,7 +7,7 @@ header{
     top: 0em;
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
 }
 
 .b_retour{
@@ -30,13 +30,18 @@ h1{
     text-align: center;
     font-size: 3em;
     background-color: yellow;
+    margin-bottom: 3em;
+}
+h2{
+    color: white;
+    text-align: center;
 }
 
 .ens_bibli{
     position: relative;
     width: 1000px;
     height: 562.5px;
-    margin-top: 10em;
+    margin-top: 15em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10em;
@@ -49,29 +54,33 @@ h1{
     background-size: cover;
     width: 100%;
     height: 100%;
+    position: relative;
+    right: 7em
 }
 .titreEtagere{
     position: absolute;
     background-color: transparent;
-    width: 62%;
     top: -.25em;
+    left: 10em;
 }
 
 .description{
-    opacity: .8;
+    margin-top: 6em;
     border: .1em solid white;
     width: 25em;
-    height: 33em;
+    height: 39em;
     position: absolute;
     right: 2em;
     border-radius: 2em;
+    cursor: default;
 }
 .ouvrage1{
     position: relative;
     width: 95%;
-    height: 10em;
+    height: 14em;
     margin-left: auto;
     margin-right: auto;
+    background-color: transparent;
 }
 h3{
     font-size: 1.5em;
@@ -91,7 +100,7 @@ h3{
 .image_ouvrage{
     background-color: transparent;
     width: 95%;
-    height: 20em;
+    height: 22em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -102,9 +111,9 @@ h3{
 .enc1{
     position: absolute;
     background-color: transparent;
-    width: 2.59em;
+    width: 2.68em;
     height: 13.7em;
-    left: 16.2em;
+    left: 9.2em;
     bottom: 17.3em;
     cursor: pointer;
 }
@@ -118,12 +127,10 @@ h3{
 }
 
 .op0{
-    transition-delay: 1s;
     opacity: 0;
-    transition: 2s;
+    transition: 1.5s;
 }
 .op1{
-    transition-delay: 1s;
-    opacity: 1;
-    transition: 2s;
+    opacity: .8;
+    transition: 1.5s;
 }
