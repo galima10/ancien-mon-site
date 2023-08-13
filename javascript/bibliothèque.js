@@ -27,7 +27,7 @@ document.querySelector("#b_d1").addEventListener("click", ()=>{
     
     } 
     
-    
+
     // Sinon : déplacer le slider à gauche
     else {
         $("#slides1").finish().animate({
@@ -130,7 +130,7 @@ document.querySelector("#b_g1").addEventListener("click", ()=>{
 
 
 
-// Bouton "i" description
+// Bouton "i" "en savoir plus" description
 
 document.querySelector("#DiapPlus").addEventListener("click", ()=>{
 
