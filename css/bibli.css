@@ -243,10 +243,10 @@ h3{
     }
 
     .t_titreouvrage{
-        font-size: .6em; 
+        font-size: 1em; 
     }
     .titreEtagere{
-        top: 0.3em;
+        top: 1.3em;
         left: 4.5em;
     }
 }

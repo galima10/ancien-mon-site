@@ -764,7 +764,7 @@ description des slides */
         width: 384px;
         height: 216px; 
         transform: scale(0.8);
-        left: -3%;
+        left: 0;
     }
     /* Style de fond de chaque épisode du diffuseur */
     .EP{
