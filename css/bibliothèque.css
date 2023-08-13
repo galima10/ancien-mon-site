@@ -3,6 +3,10 @@ body{
     background-color: black;
 }
 
+.overflowY{
+    overflow-y: hidden;
+}
+
 header{
     background-color: red;
     height: 2.6em;
