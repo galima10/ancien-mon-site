@@ -764,7 +764,7 @@ description des slides */
         width: 384px;
         height: 216px; 
         transform: scale(0.8);
-        left: -7%;
+        left: -3%;
     }
     /* Style de fond de chaque épisode du diffuseur */
     .EP{
@@ -805,7 +805,7 @@ description des slides */
     .BtnRetour{
         width: 3em;
         height: 3em;
-        right: 2em;
+        right: 1em;
         top: 1em;
     }
 
