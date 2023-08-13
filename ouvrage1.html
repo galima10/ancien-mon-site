@@ -25,6 +25,8 @@
         1𝓮𝓻 𝓸𝓾𝓿𝓻𝓪𝓰𝓮 :<br><br>𝓥𝓸𝔂𝓪𝓰𝓮 𝓪̀ 𝓽𝓻𝓪𝓿𝓮𝓻𝓼 𝓵𝓮𝓼 <br>𝓞𝓶𝓫𝓻𝓮𝓼 𝓮𝓽 𝓢𝓲𝓵𝓱𝓸𝓾𝓮𝓽𝓽𝓮𝓼
     </div>
 
+    
+
     <div class="ens_resume">
         <div class="imgResume">
             <img src="images/livre_ouvert.png" alt="livre ouvert" width="100%" class="imgLivre">
@@ -36,6 +38,7 @@
 
     <div class="titreEp">
         <h2>Épisodes</h2>
+        
         <div class="btnLire">
             <p class="t_blire">Lire tous les épisodes</p>
             <div class="arrow">
@@ -43,7 +46,9 @@
                 <div style="position: relative; right: .6em;">►</div>
             </div>
         </div>
+
     </div>
+    
 
     <div class="diapDesc">
         <div class="ens_diapo">
@@ -60,12 +65,6 @@
                                 
                             </div>
                         </div>
-                        <div class="BtnLireEp" id="BtnLireEp1">
-                            <p class="textBtnLireEp">Lire l'épisode &nbsp;&nbsp;&nbsp;►</p>
-                        </div>
-                        <div class="DiapPlus" id="Diap1Plus1">
-                            
-                        </div>
                     </div>
                     <div class="slide slide2" id="Diap1Slide2">
                         <div class="episode">
@@ -75,12 +74,6 @@
                             <div class="EpImg">
                                 
                             </div>
-                        </div>
-                        <div class="BtnLireEp" id="BtnLireEp2">
-                            <p class="textBtnLireEp">Lire l'épisode &nbsp;&nbsp;&nbsp;►</p>
-                        </div>
-                        <div class="DiapPlus" id="Diap1Plus2">
-                            
                         </div>
                     </div>
                     <div class="slide slide3" id="Diap1Slide3">
@@ -92,21 +85,24 @@
                                 
                             </div>
                         </div>
-                        <div class="BtnLireEp" id="BtnLireEp3">
-                            <p class="textBtnLireEp">Lire l'épisode &nbsp;&nbsp;&nbsp;►</p>
-                        </div>
-                        <div class="DiapPlus" id="Diap1Plus3">
-                            
-                        </div>
                     </div>
                 </div>
                 
             </div>
+
             <div class="position">
                 <div class="pos pos1 posact"></div>
                 <div class="pos pos2"></div>
                 <div class="pos pos3"></div>
             </div>
+
+            <div class="BtnLireEp" id="BtnLireEp">
+                <p class="textBtnLireEp">Lire l'épisode &nbsp;&nbsp;&nbsp;►</p>
+            </div>
+            <div class="DiapPlus" id="DiapPlus">
+                
+            </div>
+
             <img src="images/flèche.svg" alt="flèche" width="100%" height="100%" class="b_diap_g" id="b_g1">
             <img src="images/flèche.svg" alt="flèche" width="100%" height="100%" class="td b_diap_d" id="b_d1">
         </div>
@@ -122,6 +118,30 @@
             </div>
         </div>
     </div>
+
+
+    <div class="ens_regarderEp op0 none" id="regarderEp">
+        <div class="regarderEp">
+            <div class="ens_video" id="video1">
+                <div class="EP ep1 none">Episode1</div>
+                <div class="EP ep2 none">Episode2</div>
+                <div class="EP ep3 none">Episode3</div>
+                <!--
+                <iframe class="video" width="640px" height="360" src="https://www.youtube.com/embed/2gwNbswv-Zg" title="Coder un slider simple en JavaScript, HTML et CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                -->
+            </div>
+        </div>
+        <div class="epsuiv">
+            <p class="textepsuiv">Épisode suivant &nbsp;&nbsp;&nbsp;►</p>
+        </div>
+        <div class="TitreRegarder">
+            <h5></h5>
+        </div>
+        <div class="BtnRetour" id="BtnRetour">
+
+        </div>
+    </div>
+    
     
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
