@@ -12,7 +12,7 @@ header{
     top: 0em;
     display: flex;
     justify-content: space-between;
-    z-index: 4;
+    z-index: 5;
 }
 
 .b_retour{
@@ -90,6 +90,7 @@ header{
     margin-right: auto;
     z-index: 1;
     border-radius: 0 0 2em 2em;
+    overflow: hidden;
 }
 .h_desc1{
     height: 0em;
@@ -282,7 +283,10 @@ header{
 .EpDesc{
     background-color: blueviolet;
     height: 100%;
-    width: 40%
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .EpImg{
     background-color: yellowgreen;
@@ -330,4 +334,11 @@ h2{
     display: flex;
     align-items: center;
     background-color: transparent;
+}
+
+.TitreHist{
+    color: white;
+    background-color: black;
+    position: absolute;
+    font-size: 3em;
 }

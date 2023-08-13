@@ -1,10 +1,15 @@
 // Slider 1
 
-
+var click1 = 0
 
 var pos1 = 0
 var p1 = 0
 document.querySelector("#b_d1").addEventListener("click", ()=>{
+    document.querySelector("#diap1desc1").classList.replace("h_desc2", "h_desc1");
+    document.querySelector("#diap1desc2").classList.replace("h_desc2", "h_desc1");
+    document.querySelector("#diap1desc3").classList.replace("h_desc2", "h_desc1");
+    click1 = 0
+
     if (p1>=2){
     
     } else {
@@ -32,6 +37,11 @@ document.querySelector("#b_d1").addEventListener("click", ()=>{
     }
 })
 document.querySelector("#b_g1").addEventListener("click", ()=>{
+    document.querySelector("#diap1desc1").classList.replace("h_desc2", "h_desc1");
+    document.querySelector("#diap1desc2").classList.replace("h_desc2", "h_desc1");
+    document.querySelector("#diap1desc3").classList.replace("h_desc2", "h_desc1");
+    click1 = 0
+    
     if (p1<=0){
     
     } else {
@@ -61,34 +71,36 @@ document.querySelector("#b_g1").addEventListener("click", ()=>{
 
 // Slider 1 : Slide 1
 
-document.querySelector("#Diap1Plus1").addEventListener("mouseover", ()=>{
-    document.querySelector("#diap1desc1").classList.replace("h_desc1", "h_desc2");
-    
-})
-document.querySelector("#Diap1Plus1").addEventListener("mouseout", ()=>{
-    document.querySelector("#diap1desc1").classList.replace("h_desc2", "h_desc1");
+document.querySelector("#Diap1Plus1").addEventListener("click", ()=>{
+    if (click1==0){
+        document.querySelector("#diap1desc1").classList.replace("h_desc1", "h_desc2");
+        click1 = 1
+    } else if (click1==1){
+        document.querySelector("#diap1desc1").classList.replace("h_desc2", "h_desc1");
+        click1 = 0
+    } 
 })
 
 // Slider 1 : Slide 2
 
-var click1_2 = 0
-
-document.querySelector("#Diap1Plus2").addEventListener("mouseover", ()=>{
-    document.querySelector("#diap1desc2").classList.replace("h_desc1", "h_desc2");
-    
-})
-document.querySelector("#Diap1Plus2").addEventListener("mouseout", ()=>{
-    document.querySelector("#diap1desc2").classList.replace("h_desc2", "h_desc1");
+document.querySelector("#Diap1Plus2").addEventListener("click", ()=>{
+    if (click1==0){
+        document.querySelector("#diap1desc2").classList.replace("h_desc1", "h_desc2");
+        click1 = 1
+    } else if (click1==1){
+        document.querySelector("#diap1desc2").classList.replace("h_desc2", "h_desc1");
+        click1 = 0
+    } 
 })
 
 // Slider 1 : Slide 3
 
-var click1_2 = 0
-
-document.querySelector("#Diap1Plus3").addEventListener("mouseover", ()=>{
-    document.querySelector("#diap1desc3").classList.replace("h_desc1", "h_desc2");
-    
-})
-document.querySelector("#Diap1Plus3").addEventListener("mouseout", ()=>{
-    document.querySelector("#diap1desc3").classList.replace("h_desc2", "h_desc1");
+document.querySelector("#Diap1Plus3").addEventListener("click", ()=>{
+    if (click1==0){
+        document.querySelector("#diap1desc3").classList.replace("h_desc1", "h_desc2");
+        click1 = 1
+    } else if (click1==1){
+        document.querySelector("#diap1desc3").classList.replace("h_desc2", "h_desc1");
+        click1 = 0
+    } 
 })
