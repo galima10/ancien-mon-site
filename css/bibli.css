@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 header{
     background-color: red;
     height: 2.6em;
@@ -38,6 +41,11 @@ h2{
     text-align: center;
 }
 
+.bibliDesc{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
 .ens_bibli{
     position: relative;
     width: 1000px;
@@ -48,9 +56,6 @@ h2{
     margin-bottom: 10em;
 }
 .etagere{
-    /*
-    background-color: blue;
-    */
     background-image: url('../images/etagere.jpg');
     background-size: cover;
     width: 100%;
@@ -78,7 +83,7 @@ h2{
 .ouvrage1{
     position: relative;
     width: 95%;
-    height: 14em;
+    height: 18em;
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
@@ -94,6 +99,7 @@ h3{
     margin-right: auto;
     font-size: 1em;
     color: white;
+    background-color: transparent;
 }
 .texte_contenu{
     font-size: 1.2em;
@@ -101,7 +107,7 @@ h3{
 .image_ouvrage{
     background-color: transparent;
     width: 95%;
-    height: 22em;
+    height: 18em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -123,10 +129,16 @@ h3{
     transition: .3s;
 }
 .encBorder:not(:hover){
+    /*
+    border: .1em solid transparent;
+    */
     border: .1em solid transparent;
     transition: .3s;
 }
 
+.none{
+    display: none;
+}
 .op0{
     opacity: 0;
     transition: 1.5s;
@@ -134,4 +146,111 @@ h3{
 .op1{
     opacity: .8;
     transition: 1.5s;
+}
+
+.btnlien{
+    width: 6em;
+    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .7em;
+}
+.t_btnlien{
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+.btnlien:hover{
+    transition: .5s;
+    border: 0.1em solid white;
+    opacity: 1;
+}
+.btnlien:not(:hover){
+    transition: .5s;
+    border: 0.1em solid white;
+    opacity: .3;
+}
+
+.t_titreouvrage{
+    position: relative; 
+    font-size: 1.1em; 
+    opacity: .8; 
+    z-index: 1;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .ens_bibli{
+        width: 432px; 
+        height: 243px;
+    }
+    .etagere{
+        right: 3em
+    }
+    .enc1{
+        width: 1.1em;
+        height: 5.85em;
+        left: 3.95em;
+        bottom: 7.45em;
+    }
+    .description{
+        width: 19em;
+        height: 28em;
+        right: 2em;
+        top: 72em;
+    }
+    .bibliDesc{
+        display: block; 
+        margin-bottom: 30em;
+    }
+
+    .ouvrage1{
+        width: 95%;
+        height: 13em;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+    .contenu{
+        width: 90%;
+        font-size: 1em;
+    }
+    .texte_contenu{
+        font-size: .8em;
+    }
+    .image_ouvrage{
+        width: 95%;
+        height: 13em;
+    }
+
+    .btnlien{
+        width: 5em;
+        height: 2em;
+        background-color: black;
+    }
+    .t_btnlien{
+        font-size: .9em;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .t_titreouvrage{
+        font-size: .1em; 
+    }
+    .titreEtagere{
+        top: -1em;
+        left: 4.5em;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+/* Vos styles pour les écrans de smartphone en mode paysage ici */
 }
