@@ -36,7 +36,7 @@ header{
 
         /* Bouton "accueil du menu" */
         .b_acc{
-            background-color: black;
+            background-color: blue;
             height: 2.6em;
             width: 4em;
         }

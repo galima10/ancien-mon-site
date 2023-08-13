@@ -1,0 +1,614 @@
+body{
+    overflow-x: hidden;
+    background-color: transparent;
+}
+
+
+
+.overflowY{
+    overflow-y: hidden;
+}
+
+
+
+
+/* Style Barre de menu */
+header{
+    background-color: red;
+    height: 2.6em;
+    width: 100vw;
+    position: fixed;
+    left: 0em;
+    top: 0em;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+    /* Dans la barre de menu */
+
+        /* Bouton "Retour du menu" */
+        .b_retour{
+            background-color: aqua;
+            height: 2.6em;
+            width: 4em;
+        }
+
+        /* Bouton "accueil du menu" */
+        .b_acc{
+            background-color: blue;
+            height: 2.6em;
+            width: 4em;
+        }
+
+
+
+
+/* Gros titre de la page */
+.h1{
+    margin-top: 5em;
+    background-color: yellow;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 3em;
+}
+
+
+
+
+/* Style de la div contenant le résumé/synopsis */
+.ens_resume{
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    left: -.5em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+    /* Dans la div contenant le synopsis */
+
+        /* Style de la div contenant l'image "livre ouvert" */
+        .imgResume{
+            background-color: aqua;
+            width: 50vw;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+            /* Style de l'image "livre ouvert" */
+            .imgLivre{
+                position: relative;
+                left: -40%;
+            }
+
+        /* Style de la div contenant le texte du synopsis */
+        .resume{
+            background-color: chartreuse;
+            width: 50vw;
+        }
+
+            /* Style du texte du synopsis */
+            .contenuResume{
+                background-color: red;
+                width: 90%;
+                font-size: 1.5em;
+                position: relative;
+                left: -30%;
+                top: 5%
+            }
+
+
+
+
+/* Style du titre du slider */
+
+.titreEp{
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}
+h2{
+    font-size: 2em;
+    color: white;
+}
+
+
+
+
+/* Style du bouton lire tous les épisodes */
+
+.btnLire{
+    border-radius: .6em;
+    margin-left: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12em;
+    height: 2.5em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+    /* Style du texte du bouton lire tous les épisodes */
+    .t_blire{
+        background-color: transparent;
+        position: relative;
+        margin-left: .5em;
+    }
+
+    /* Style de la div contenant les flèches du bouton lire tous les
+    épisodes */
+    .arrow{
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    /* Fonctionnement mouseover/out bouton lire tous les épisodes */
+    .btnLire:hover{
+        background-color: blueviolet;
+        transform: scale(1.05);
+        transition: .5s;
+    }
+    .btnLire:not(:hover){
+        background-color: red;
+        transition: .5s;
+    }
+
+
+
+
+
+
+
+
+/* Style de la div contenant tout le slider : slider + 
+description des slides */
+.diapDesc{
+    position: relative;
+    margin-bottom: 30em;
+}
+
+    /* Style de la div contenant les boutons : droite/
+    gauche, en savoir plus, lire l'épisode + slider + voyant 
+    position des slides */
+    .ens_diapo{
+        background-color: transparent;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+    }
+
+        /* Style de la div contenant seulement le slider 
+        qui va se déplacer et les slides*/
+        .diapo{
+            border: 0.2em solid rgba(255, 255, 255, 0.763);
+            border-radius: 2em;
+            height: 17em;
+            position: relative;
+            width: 95vw;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 2;
+        }
+        
+            /* Style de la div du slider qui va se déplacer
+            et contenant les slides */
+            .slides{
+                position: relative;
+                width: 285vw;
+            }
+
+                /* Style de fond de toutes les slides */
+                .slide{
+                    position: relative;
+                    width: 95vw;
+                    float: left;
+                    height: 17em;
+                }
+                .slide1{
+                    background-color: transparent;
+                }
+                .slide2{
+                    background-color: transparent;
+                }
+                .slide3{
+                    background-color: transparent;
+                }
+
+                    /* A l'intérieur des div slides */
+
+                        /* Style de la div contenant le "devant"
+                        de chaque slides */
+                        .episode{
+                            background-color: transparent;
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                        }
+
+                                /* Style de la div contenant le Titre
+                                de chaque slide */
+                                .EpDesc{
+                                    background-color: blueviolet;
+                                    height: 100%;
+                                    width: 40%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+
+                                    /* Style du texte du Titre de la 
+                                    slide */
+                                    .TitreHist{
+                                        color: white;
+                                        background-color: black;
+                                        position: absolute;
+                                        font-size: 3em;
+                                    }
+
+                                /* Style de la div contenant l'image
+                                de chaque slide */
+                                .EpImg{
+                                    background-color: yellowgreen;
+                                    height: 100%;
+                                    width: 70%
+                                }
+
+                                    /* Style de chauqe images de chaque 
+                                    slide */
+                                    /*
+                                    .imgep1{
+
+                                    */
+
+        
+        /* Style du bouton de gauche */
+        .b_diap_g{
+            position: absolute;
+            left: 0.2em;
+            width: 2.5em;
+            height: 10em;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 3;
+        }
+
+            /* Fonctionnement mouseover/out bouton de gauche */
+            .b_diap_g:hover{
+                opacity: 1;
+                background-color: transparent;
+                transition: .5s;
+                transform: scale(1.2);
+            }
+            .b_diap_g:not(:hover){
+                opacity: .3;
+                background-color: transparent;
+                transition: .5s;
+            }
+
+        
+        /* Style du bouton de droite */
+        .b_diap_d{
+            position: absolute;
+            right: 0.2em;
+            width: 2.5em;
+            height: 10em;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transform: rotate(180deg);
+            z-index: 3;
+        }
+
+            /* Fonctionnement mouseover/out bouton de droite */
+            .b_diap_d:hover{
+                opacity: 1;
+                background-color: transparent;
+                transition: .5s;
+                transform: rotate(180deg) scale(1.2);
+            }
+            .b_diap_d:not(:hover){
+                opacity: .3;
+                background-color: transparent;
+                transition: .5s;
+            }
+
+        
+        /* Style du bouton en savoir plus "i" */
+        .DiapPlus{
+            position: absolute;
+            right: 3em;
+            bottom: .7em;
+            width: 3em;
+            height: 3em;
+            cursor: pointer;
+            border-radius: 2em;
+            z-index: 3;
+        }
+
+            /* Fonctionnement mouseover/out bouton en savoir plus "i" */
+            .DiapPlus:hover{
+                background-color: rgba(0, 0, 0, 0.606);
+                transition: .5s;
+                transform: scale(1.05);
+                opacity: 9;
+                /*border: 0.1em solid rgba(255, 255, 255, 0.763);*/
+            }
+            .DiapPlus:not(:hover){
+                background-color: rgba(0, 0, 0, 0.606);
+                transition: .5s;
+                opacity: .5;
+                /*border: 0.1em solid transparent;*/
+            }
+
+
+        /* Style du bouton lire l'épisode */
+        .BtnLireEp{
+            border-radius: .8em;
+            position: absolute;
+            background-color: blueviolet;
+            width: 10em;
+            height: 3em;
+            right: 7em;
+            bottom: .7em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 3;
+        }
+
+            /* Style du texte dans le bouton lire l'épisode*/
+            .textBtnLireEp{
+                font-size: 1.2em;
+                background-color: transparent;
+                color: white;
+                display: inline;
+            }
+
+            /* Fonctionnement mouseover/out bouton lire l'épisode */
+            .BtnLireEp:hover{
+                background-color: rgba(0, 0, 0, 0.606);
+                transition: .5s;
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            .BtnLireEp:not(:hover){
+                background-color: rgba(0, 0, 0, 0.606);
+                transition: .5s;
+                opacity: .7;
+            }
+
+
+        /* Style de la div contenant le voyant des slides en bas 
+        à gauche */
+        .position{
+            background-color: transparent;
+            width: 4.2em;
+            height: .6em;
+            position: absolute;
+            display: flex;
+            bottom: .7em;
+            left: 2em;
+            z-index: 3;
+        }
+
+            /* Style par défaut tous les voyants */
+            .pos{
+                margin-left: .4em;
+                margin-right: .4em;
+                background-color: white;
+                width: .6em;
+                height: .6em;
+                border-radius: 5em;
+                opacity: .3;
+                transform: scale(1);
+            }
+
+            /* Style du voyant en fonction de la position du slider
+            (position actuelle) */
+            .posact{
+                background-color: white;
+                transform: scale(1.2);
+                opacity: .8;
+                transition: 1s;
+            }
+
+    
+    
+    /* Style de la div contenant la description de chaque slides */
+    .ens_desc{
+        position: relative;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+        /* Style de la description de chaque slide */
+        .desc{
+            position: relative;
+            top: -2em;
+            background-color: white;
+            opacity: .5;
+            width: 94vw;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            border-radius: 0 0 2em 2em;
+            overflow: hidden;
+        }
+
+            /* Hauteur 0 de la description */
+            .h_desc1{
+                height: 0em;
+                transition: .5s;
+            }
+
+            /* Hauteur 15em de la description */
+            .h_desc2{
+                height: 15em;
+                transition: .5s;
+            }
+
+
+
+
+
+
+
+
+/* Style de la div contenant tout le diffuseur: l'épisode, les boutons */
+.ens_regarderEp{
+    background-color: rgba(0, 26, 172, 0.534);
+    opacity: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+    /* Style de la div contenant tous les épisodes */
+    .regarderEp{
+        background-color: darkorchid;
+        width: 640px;
+        height: 360px; 
+        position: absolute;
+        display: flex;
+        transform: scale(1.5);
+        left: 15%;
+    }
+
+        /* Style de fond de chaque épisode du diffuseur */
+        .EP{
+            width: 640px;
+            height: 360px;
+        }
+        .ep1{
+            background-color: red;
+        }
+        .ep2{
+            background-color: blue;
+        }
+        .ep3{
+            background-color: antiquewhite;
+        }
+
+    
+
+    /* Style du bouton épisode suivant */
+    .epsuiv{
+        background-color: aqua;
+        position: absolute;
+        width: 12em;
+        height: 2.5em;
+        bottom: 1em;
+        right: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .6em;
+        cursor: pointer;
+    }
+
+        /* Style du texte du vouton épisode suivant */
+        .textepsuiv{
+            font-size: 1.2em;
+            background-color: transparent;
+            color: white;
+            display: inline;
+            position: absolute;
+            left: 1em;
+        }
+
+        /* Fonctionnement mouseover/out bouton épisode suivant */
+        .epsuiv:hover{
+            background-color: blueviolet;
+            transform: scale(1.05);
+            transition: .5s;
+        }
+        .epsuiv:not(:hover){
+            background-color: red;
+            transition: .5s;
+        }
+
+
+    /* Style de la div contenant le titre de chaque épisode sur le 
+    diffuseur */
+    .TitreRegarder{
+        position: absolute;
+        background-color: aqua;
+        width: 15em;
+        height: 10em;
+        right: 2em;
+        top: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        /* Style du texte de la div titre de chauqe épisode sur le 
+        diffuseur */
+        h5{
+            color: white;
+            font-size: 2em;
+            text-align: center;
+        }
+
+    /* Style du bouton retour du diffuseur */
+    .BtnRetour{
+        position: absolute;
+        width: 4em;
+        height: 4em;
+        right: 2em;
+        top: 1em;
+        cursor: pointer;
+    }
+
+        /* Fonctionnement mouseover/out bouton retour du diffuseur */
+        .BtnRetour:hover{
+            background-color: royalblue;
+            transform: scale(1.05);
+            transition: .5s;
+        }
+        .BtnRetour:not(:hover){
+            background-color: yellow;
+            transition: .5s;
+        }
+
+    
+
+
+/* Autres class */
+.none{
+    display: none;
+}
+.op0{
+    opacity: 0;
+    transition: 1s;
+}
+.op1{
+    opacity: 1;
+    transition: 1s;
+}
