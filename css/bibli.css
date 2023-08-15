@@ -40,6 +40,12 @@ h2{
     color: white;
     text-align: center;
 }
+.h2{
+    color: white;
+    text-align: center;
+    margin-top: 7em;
+    font-size: 1.2em;
+}
 
 .bibliDesc{
     display: flex; 
@@ -181,33 +187,36 @@ h3{
     opacity: .8; 
     z-index: 1;
 }
-
+.espace{
+    display: none;
+}
 
 
 
 @media (max-width: 767px) {
     .ens_bibli{
-        width: 432px; 
-        height: 243px;
+        width: 518.4px; 
+        height: 291.6px;
+        right: 2.5em;
     }
     .etagere{
         right: 3em
     }
     .enc1{
-        width: 1.1em;
-        height: 5.85em;
-        left: 3.95em;
-        bottom: 7.45em;
+        width: 1.3em;
+        height: 7em;
+        left: 5.4em;
+        bottom: 9em;
     }
     .description{
         width: 19em;
         height: 28em;
         right: 2em;
-        top: 72em;
+        top: 80em;
     }
     .bibliDesc{
         display: block; 
-        margin-bottom: 30em;
+        margin-bottom: 35em;
     }
 
     .ouvrage1{
@@ -248,6 +257,18 @@ h3{
     .titreEtagere{
         top: -0.6em;
         left: 4.5em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    .h2{
+        font-size: 1em;
+    }
+    em{
+        font-size: .8em;
+    }
+    .espace{
+        display: block;
     }
 }
 

@@ -707,39 +707,39 @@ description des slides */
         width: 2em;
         height: 10em;
     }
-/* Style du bouton de droite */
-    .b_diap_d{
-        right: 0em;
-        width: 2em;
-        height: 10em;
-    }
-/* Style du bouton en savoir plus "i" */
-    .DiapPlus{
-        right: 1.8em;
-        bottom: .5em;
-        width: 1.5em;
-        height: 1.5em;
-    }
-/* Style du bouton lire l'épisode */
-    .BtnLireEp{
-        border-radius: .5em;
-        width: 8em;
-        height: 1.5em;
-        right: 4em;
-        bottom: .5em;
-    }
-    .textBtnLireEp{
-        font-size: .7em;
-    }
-/* Style de la div contenant le voyant des slides en bas 
-    à gauche */
-    .position{
-        width: 3em;
-        height: .4em;
-        bottom: .7em;
-        left: 1em;
-        background-color: transparent;
-    }
+    /* Style du bouton de droite */
+        .b_diap_d{
+            right: 0em;
+            width: 2em;
+            height: 10em;
+        }
+    /* Style du bouton en savoir plus "i" */
+        .DiapPlus{
+            right: 1.8em;
+            bottom: .5em;
+            width: 1.5em;
+            height: 1.5em;
+        }
+    /* Style du bouton lire l'épisode */
+        .BtnLireEp{
+            border-radius: .5em;
+            width: 8em;
+            height: 1.5em;
+            right: 4em;
+            bottom: .5em;
+        }
+        .textBtnLireEp{
+            font-size: .7em;
+        }
+    /* Style de la div contenant le voyant des slides en bas 
+        à gauche */
+        .position{
+            width: 3em;
+            height: .4em;
+            bottom: .7em;
+            left: 1em;
+            background-color: transparent;
+        }
 
         /* Style par défaut tous les voyants */
         .pos{
