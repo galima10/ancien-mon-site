@@ -1,6 +1,6 @@
 body{
     overflow-x: hidden;
-    background-color: black;
+    background-color: rgb(88, 39, 39);
 }
 
 
@@ -14,7 +14,7 @@ body{
 
 /* Style Barre de menu */
 header{
-    background-color: red;
+    background-color: rgb(67, 86, 147);
     height: 2.6em;
     width: 100vw;
     position: fixed;
@@ -23,34 +23,69 @@ header{
     display: flex;
     justify-content: space-between;
     z-index: 5;
+    overflow: hidden;
 }
 
     /* Dans la barre de menu */
 
         /* Bouton "Retour du menu" */
         .b_retour{
-            background-color: aqua;
+            background-image: url('../images/flèche\ de\ retour.png');
+            background-size: cover;
             height: 2.6em;
-            width: 4em;
+            width: 2.6em;
+            transform: rotate(230deg);
+            background-position: center;
+        }
+        .b_retour:hover{
+            transition: .5s;
+            opacity: 1;
+            transform: rotate(230deg) scale(1.1);
+        }
+        .b_retour:not(:hover){
+            transition: .5s;
+            opacity: .5;
         }
 
         /* Bouton "accueil du menu" */
         .b_acc{
-            background-color: blue;
+            background-image: url('../images/accueil.png');
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: center;
             height: 2.6em;
-            width: 4em;
+            width: 2.6em;
+        }
+        .b_acc:hover{
+            transition: .5s;
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        .b_acc:not(:hover){
+            transition: .5s;
+            opacity: .5;
+        }
+
+        /* lien des boutons */
+        .lien_btn_retour{
+            position: relative;
+            left: 1em;
+        }
+        .lien_btn_acc{
+            position: relative;
+            right: 2em;
         }
 
 
 
-
 /* Gros titre de la page */
-.h1{
-    margin-top: 5em;
-    background-color: yellow;
+h1{
+    background-color: transparent;
     text-align: center;
     font-size: 3em;
     margin-bottom: 3em;
+    color: white;
+    text-decoration: underline 1px;
 }
 
 
@@ -59,7 +94,9 @@ header{
 /* Style de la div contenant le résumé/synopsis */
 .ens_resume{
     width: 100vw;
-    background-color: black;
+    background-color: transparent;
+    border-top: .15em solid rgba(255, 255, 255, 0.8);
+    border-bottom: .15em solid rgba(255, 255, 255, 0.8);
     position: relative;
     left: -.5em;
     display: flex;
@@ -71,7 +108,7 @@ header{
 
         /* Style de la div contenant l'image "livre ouvert" */
         .imgResume{
-            background-color: aqua;
+            background-color: transparent;
             width: 50vw;
             height: 100%;
             display: flex;
@@ -86,18 +123,19 @@ header{
 
         /* Style de la div contenant le texte du synopsis */
         .resume{
-            background-color: chartreuse;
+            background-color: transparent;
             width: 50vw;
         }
 
             /* Style du texte du synopsis */
             .contenuResume{
-                background-color: red;
+                background-color: transparent;
                 width: 90%;
                 font-size: 1.5em;
                 position: relative;
                 left: -30%;
-                top: 5%
+                top: 5%;
+                color: white;
             }
 
 
@@ -150,13 +188,15 @@ h2{
 
         /* Fonctionnement mouseover/out bouton lire tous les épisodes */
         .btnLire:hover{
-            background-color: blueviolet;
+            background-color: white;
             transform: scale(1.05);
             transition: .5s;
+            opacity: .8;
         }
         .btnLire:not(:hover){
-            background-color: red;
+            background-color: white;
             transition: .5s;
+            opacity: .5;
         }
 
 
@@ -278,7 +318,7 @@ description des slides */
             left: 0.2em;
             width: 2.5em;
             height: 10em;
-            background-color: aquamarine;
+            background-color: transparent;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -339,6 +379,15 @@ description des slides */
             cursor: pointer;
             border-radius: 2em;
             z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .textDiapPlus{
+            display: inline;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: white;
         }
 
             /* Fonctionnement mouseover/out bouton en savoir plus "i" */
@@ -361,7 +410,7 @@ description des slides */
         .BtnLireEp{
             border-radius: .8em;
             position: absolute;
-            background-color: blueviolet;
+            background-color: transparent;
             width: 10em;
             height: 3em;
             right: 7em;
@@ -446,8 +495,8 @@ description des slides */
         .desc{
             position: relative;
             top: -2em;
-            background-color: white;
-            opacity: .5;
+            background-color: rgba(255, 255, 255, 0.500);
+            opacity: 1;
             width: 94vw;
             margin-left: auto;
             margin-right: auto;
@@ -464,9 +513,77 @@ description des slides */
 
             /* Hauteur 15em de la description */
             .h_desc2{
-                height: 15em;
+                height: 20em;
                 transition: .5s;
             }
+
+                /* Style de la div contenant la description */
+                .ContenuDesc{
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: transparent;
+                    height: 17em;
+                    margin-top: 3em;
+                    color: rgb(255, 255, 255);
+                }
+
+
+                /* Style de la div de gauche */
+                .DescGauche{
+                    width: 50%;
+                    height: 100%;
+                    background-color: transparent;
+                    border-right: .1em solid white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Style de la div de droite */
+                .DescDroite{
+                    width: 50%;
+                    height: 100%;
+                    border-left: .1em solid white;
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    /* Style de la div contenant les textes de chaque
+                    description */
+                    .DescTexte{
+                        height: 80%;
+                        width: 95%;
+                        background-color: transparent;
+                    }
+
+                        /* Style du Titre de chaque 
+                        description */
+                        .DescTitre{
+                            background-color: transparent;
+                            height: 20%;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 1em;
+                        }
+
+                        .TailleTexteTitre{
+                            font-size: 1.7em;
+                            background-color: transparent;
+                            font-weight: bold;
+                        }
+                        .TailleTexteSyno{
+                            font-size: 1.2em;
+                            background-color: transparent;
+                            display: inline;
+                        }
+
+                            /* Synopsis de l'histoire 1 */
+                            .DescTexteSynopsis{
+                                background-color: transparent;
+                                height: calc(80% - 1em);
+                            }
 
 
 
@@ -477,7 +594,7 @@ description des slides */
 
 /* Style de la div contenant tout le diffuseur: l'épisode, les boutons */
 .ens_regarderEp{
-    background-color: rgba(0, 26, 172, 0.534);
+    background-color: rgba(0, 0, 0, 0.700);
     opacity: 1;
     position: fixed;
     display: flex;
@@ -537,7 +654,7 @@ description des slides */
         .textepsuiv{
             font-size: 1.2em;
             background-color: transparent;
-            color: white;
+            color: black;
             display: inline;
             position: absolute;
             left: 1em;
@@ -545,13 +662,15 @@ description des slides */
 
         /* Fonctionnement mouseover/out bouton épisode suivant */
         .epsuiv:hover{
-            background-color: blueviolet;
+            background-color: white;
             transform: scale(1.05);
             transition: .5s;
+            opacity: .8;
         }
         .epsuiv:not(:hover){
-            background-color: red;
+            background-color: white;
             transition: .5s;
+            opacity: .5;
         }
 
 
@@ -559,7 +678,7 @@ description des slides */
     diffuseur */
     .TitreRegarder{
         position: absolute;
-        background-color: aqua;
+        background-color: transparent;
         width: 15em;
         height: 10em;
         right: 2em;
@@ -567,35 +686,41 @@ description des slides */
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: default;
+        border: .1em solid white;
+        border-radius: 1em;
     }
 
         /* Style du texte de la div titre de chauqe épisode sur le 
         diffuseur */
         h5{
             color: white;
-            font-size: 2em;
+            font-size: 1.2em;
             text-align: center;
+            opacity: .8;
         }
 
     /* Style du bouton retour du diffuseur */
     .BtnRetour{
         position: absolute;
-        width: 4em;
-        height: 4em;
+        width: 3em;
+        height: 3em;
         right: 2em;
         top: 1em;
         cursor: pointer;
+        background-image: url('../images/flèche\ retour.png');
+        background-size: cover;
     }
 
         /* Fonctionnement mouseover/out bouton retour du diffuseur */
         .BtnRetour:hover{
-            background-color: royalblue;
             transform: scale(1.05);
             transition: .5s;
+            opacity: .9;
         }
         .BtnRetour:not(:hover){
-            background-color: yellow;
             transition: .5s;
+            opacity: .6;
         }
 
     
@@ -622,18 +747,17 @@ description des slides */
 @media (max-width: 767px)  {
 
 /* Gros titre de la page */
-.h1{
+h1{
     font-size: 2em;
 }
 
 /* Style de la div contenant le résumé/synopsis */
 .ens_resume{
     width: 100vw;
-    background-color: black;
+    background-color: transparent;
     position: relative;
     left: -.5em;
     display: block;
-    justify-content: space-between;
     margin-bottom: 2em;
 }
 
@@ -731,6 +855,10 @@ description des slides */
         .textBtnLireEp{
             font-size: .7em;
         }
+    .textDiapPlus{
+        font-size: 1em;
+    }
+
     /* Style de la div contenant le voyant des slides en bas 
         à gauche */
         .position{
@@ -775,7 +903,7 @@ description des slides */
     /* Style du texte de la div titre de chauqe épisode sur le 
         diffuseur */
         h5{
-            font-size: 1.2em;
+            font-size: 1em;
         }
 
     .TitreRegarder{
@@ -808,6 +936,32 @@ description des slides */
         right: 1em;
         top: 1em;
     }
+    .TailleTexteTitre{
+        font-size: 1.2em;
+    }
+    .TailleTexteSyno{
+        font-size: .8em;
+    }
+    .h_desc2{
+        height: 25em;
+    }
+    /* Style de la div contenant la description */
+    .ContenuDesc{
+        height: 22em;
+        margin-top: 3em;
+    }
+    /* Style de la div contenant les textes de chaque
+    description */
+    .DescTexte{
+        height: 90%;
+        width: 95%;
+    }
+
+    .BtnRetour{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
 
 }
 

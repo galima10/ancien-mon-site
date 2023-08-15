@@ -187,8 +187,8 @@ document.querySelector(".btnLire").addEventListener("click", ()=>{
     // Enlever à l'épisode 1 la class "none"
     document.querySelector(".ep1").classList.remove("none");
 
-    // Mettre en titre : Les Profondeurs des Bois sombres
-    document.querySelector("h5").innerHTML="Les Profondeurs des Bois sombres"
+    // Mettre en titre : Les Profondeurs des Bois sombres : Rencontre dans les ténèbres
+    document.querySelector("h5").innerHTML="Les Profondeurs des Bois sombres : Rencontre dans les ténèbres"
 
     // Mettre le diffuseur à l'épisode 1 (ajouter à "ep", 1)
     ep=1
@@ -232,8 +232,8 @@ document.querySelector("#BtnLireEp").addEventListener("click", ()=>{
         // Enlever à l'épisode 1 la class "none"
         document.querySelector(".ep1").classList.remove("none");
         
-        // Mettre en titre : Les Profondeurs des Bois sombres
-        document.querySelector("h5").innerHTML="Les Profondeurs des Bois sombres"
+        // Mettre en titre : Les Profondeurs des Bois sombres : Rencontre dans les ténèbres
+        document.querySelector("h5").innerHTML="Les Profondeurs des Bois sombres : Rencontre dans les ténèbres"
         
         // Mettre le diffuseur à l'épisode 1 (ajouter à "ep", 1)
         ep=1

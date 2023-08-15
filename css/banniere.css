@@ -1,0 +1,73 @@
+.GrandeBanniere{
+    background-color: transparent;
+    height: 13em;
+    margin-top: 5.5em;
+    border-radius: 1em;
+}
+
+.BanniereMenu{
+    background-color: transparent;
+    height: 10em;
+    margin-top: 5.5em;
+    border-radius: 1em;
+}
+
+.banniere{
+    background-color: transparent;
+    height: 10em;
+    margin-top: 3.5em;
+    border-radius: 1em;
+}
+.miniseries{
+    background-image: url('../images/bande\ de\ film\ vintage.jpg');
+    background-size: 21%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+}
+
+.bibli{
+    background-image: url('../images/bannière\ bibliothèque.jpg');
+    background-size: 20%;
+}
+
+.projets{
+    background-color: rgb(163, 192, 227);
+    background-image: url('../images/bannière\ projets.jpg');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+@media (max-width: 767px) {
+    .GrandeBanniere{
+        height: 10em;
+        border-radius: .8em;
+    }
+    
+    .BanniereMenu{
+        height: 7em;
+        border-radius: .8em;
+    }
+    
+    .banniere{
+        height: 7em;
+        border-radius: .8em;
+    }
+}
+
+@media (max-width: 767px) {
+    .miniseries{
+        background-size: 52%;
+    }
+    .bibli{
+        background-size: 50%;
+    }
+    .projets{
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    
+}

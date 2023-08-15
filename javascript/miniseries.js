@@ -24,6 +24,8 @@ document.querySelector(".ep1").addEventListener("click", ()=>{
     }
 })
 
+/*
+
 // Episode 2
 document.querySelector(".ep2").addEventListener("click", ()=>{
     if (click==0){
@@ -46,3 +48,5 @@ document.querySelector(".ep2").addEventListener("click", ()=>{
         click=0;
     }
 })
+
+*/

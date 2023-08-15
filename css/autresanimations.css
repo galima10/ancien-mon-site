@@ -1,5 +1,20 @@
+body{
+
+    background-color: black;
+}
+
+
+
+.overflowY{
+    overflow-y: hidden;
+}
+
+
+
+
+/* Style Barre de menu */
 header{
-    background-color: red;
+    background-color: rgb(67, 86, 147);
     height: 2.6em;
     width: 100vw;
     position: fixed;
@@ -7,28 +22,70 @@ header{
     top: 0em;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 5;
 }
 
-.b_retour{
-    background-color: aqua;
-    height: 2.6em;
-    width: 4em;
-}
-.b_acc{
-    background-color: blue;
-    height: 2.6em;
-    width: 4em;
-}
+    /* Dans la barre de menu */
 
-body{
-    background-color: transparent;
-}
+        /* Bouton "Retour du menu" */
+        .b_retour{
+            background-image: url('../images/flèche\ de\ retour.png');
+            background-size: cover;
+            height: 2.6em;
+            width: 2.6em;
+            transform: rotate(230deg);
+            background-position: center;
+        }
+        .b_retour:hover{
+            transition: .5s;
+            opacity: 1;
+            transform: rotate(230deg) scale(1.1);
+        }
+        .b_retour:not(:hover){
+            transition: .5s;
+            opacity: .5;
+        }
+
+        /* Bouton "accueil du menu" */
+        .b_acc{
+            background-image: url('../images/accueil.png');
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: center;
+            height: 2.6em;
+            width: 2.6em;
+        }
+        .b_acc:hover{
+            transition: .5s;
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        .b_acc:not(:hover){
+            transition: .5s;
+            opacity: .5;
+        }
+
+        /* lien des boutons */
+        .lien_btn_retour{
+            position: relative;
+            left: 1em;
+        }
+        .lien_btn_acc{
+            position: relative;
+            right: 2em;
+        }
 
 h1{
-    margin-top: 5em;
     text-align: center;
-    font-size: 3em;
-    background-color: yellow;
+    background-color: transparent;
     margin-bottom: 3em;
+    font-size: 3em;
+    height: 2.5em;
+    color: white;
+    border-top: .05em solid rgba(255, 255, 255, 0.8);
+    border-bottom: .05em solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
