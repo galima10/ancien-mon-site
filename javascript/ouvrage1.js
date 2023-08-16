@@ -313,7 +313,7 @@ document.querySelector("#BtnRetour").addEventListener("click", ()=>{
 })
 
 
-
+/*
 
 // Bouton épisode suivant
 
@@ -377,3 +377,5 @@ document.querySelector(".epsuiv").addEventListener("click", ()=>{
         ep=3
     }
 })
+
+*/

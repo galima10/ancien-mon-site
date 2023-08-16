@@ -230,7 +230,7 @@ description des slides */
         /* Style de la div contenant seulement le slider 
         qui va se déplacer et les slides*/
         .diapo{
-            border: 0.2em solid rgba(255, 255, 255, 0.763);
+            border: 0.2em solid rgba(255, 255, 255, 0.700);
             border-radius: 2em;
             height: 17em;
             position: relative;
@@ -279,45 +279,65 @@ description des slides */
                                 /* Style de la div contenant le Titre
                                 de chaque slide */
                                 .EpDesc{
-                                    background-color: blueviolet;
+                                    background-color: black;
                                     height: 100%;
-                                    width: 40%;
+                                    width: 33%;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                    background-size: 85%;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    border-right: .1em solid rgb(207, 187, 187);
                                 }
 
                                     /* Style du texte du Titre de la 
                                     slide */
+
+                                    
                                     .TitreHist{
                                         color: white;
-                                        background-color: black;
+                                        background-color: transparent;
                                         position: absolute;
-                                        font-size: 3em;
+                                        font-size: 1.5em;
+                                        bottom: 0;
+                                        cursor: default;
+                                    }
+                                    
+
+                                    /* Style de chaque titre de chaque 
+                                    slide */
+
+                                    .titreep1{
+                                        background-image: url('../images/titre\ hist1\ chap1.jpg');    
                                     }
 
                                 /* Style de la div contenant l'image
                                 de chaque slide */
                                 .EpImg{
-                                    background-color: yellowgreen;
+                                    background-color: black;
                                     height: 100%;
-                                    width: 70%
+                                    width: 67%;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position-x: center;
                                 }
 
-                                    /* Style de chauqe images de chaque 
+                                    /* Style de chaque images de chaque 
                                     slide */
-                                    /*
+                                    
                                     .imgep1{
-
-                                    */
+                                        background-image: url('../images/bannière\ hist1\ chap1.jpg');
+                                    }
+                                    
 
         
         /* Style du bouton de gauche */
         .b_diap_g{
             position: absolute;
-            left: 0.2em;
-            width: 2.5em;
-            height: 10em;
+            left: 0.7em;
+            width: 1.5em;
+            height: 4.5em;
             background-color: transparent;
             display: flex;
             justify-content: center;
@@ -334,7 +354,7 @@ description des slides */
                 transform: scale(1.2);
             }
             .b_diap_g:not(:hover){
-                opacity: .3;
+                opacity: .5;
                 background-color: transparent;
                 transition: .5s;
             }
@@ -343,9 +363,9 @@ description des slides */
         /* Style du bouton de droite */
         .b_diap_d{
             position: absolute;
-            right: 0.2em;
-            width: 2.5em;
-            height: 10em;
+            right: 0.7em;
+            width: 1.5em;
+            height: 4.5em;
             background-color: black;
             display: flex;
             justify-content: center;
@@ -363,7 +383,7 @@ description des slides */
                 transform: rotate(180deg) scale(1.2);
             }
             .b_diap_d:not(:hover){
-                opacity: .3;
+                opacity: .5;
                 background-color: transparent;
                 transition: .5s;
             }
@@ -465,7 +485,7 @@ description des slides */
                 width: .6em;
                 height: .6em;
                 border-radius: 5em;
-                opacity: .3;
+                opacity: .5;
                 transform: scale(1);
             }
 
@@ -474,7 +494,7 @@ description des slides */
             .posact{
                 background-color: white;
                 transform: scale(1.2);
-                opacity: .8;
+                opacity: 1;
                 transition: 1s;
             }
 
@@ -576,7 +596,10 @@ description des slides */
                         .TailleTexteSyno{
                             font-size: 1.2em;
                             background-color: transparent;
-                            display: inline;
+                            display: block;
+                            width: 80%;
+                            position: relative;
+                            left: 1em;
                         }
 
                             /* Synopsis de l'histoire 1 */
@@ -624,13 +647,18 @@ description des slides */
             height: 360px;
         }
         .ep1{
-            background-color: red;
+            background-color: transparent;
         }
         .ep2{
             background-color: blue;
         }
         .ep3{
             background-color: antiquewhite;
+        }
+
+        .VidEp1{
+            width: 100%;
+            height: 100%;
         }
 
     
@@ -827,15 +855,15 @@ h1{
 
     /* Style du bouton de gauche */
     .b_diap_g{
-        left: 0em;
-        width: 2em;
-        height: 10em;
+        left: 0.5em;
+        width: .8em;
+        height: 2.5em;
     }
     /* Style du bouton de droite */
         .b_diap_d{
-            right: 0em;
-            width: 2em;
-            height: 10em;
+            right: 0.5em;
+            width: .8em;
+            height: 2.5em;
         }
     /* Style du bouton en savoir plus "i" */
         .DiapPlus{
@@ -937,10 +965,10 @@ h1{
         top: 1em;
     }
     .TailleTexteTitre{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .TailleTexteSyno{
-        font-size: .8em;
+        font-size: .7em;
     }
     .h_desc2{
         height: 25em;
@@ -961,7 +989,19 @@ h1{
         width: 2.5em;
         height: 2.5em;
     }
-    
+    .TitreHist{
+        font-size: .7em;
+        top: 1.5em;
+        right: 1em;
+    }
+    .EpDesc{
+        width: 50%;
+        background-size: 100%;
+    }
+    .h_desc2{
+        height: 18em;
+        transition: .5s;
+    }
 
 }
 
