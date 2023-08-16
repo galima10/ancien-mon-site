@@ -241,6 +241,10 @@ h1{
 
 /* Animations montées */
 
+.portfolio{
+    margin-bottom: 15em;
+}
+
 .onglet{
     background-color: transparent;
     width: 8em;

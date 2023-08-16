@@ -21,6 +21,8 @@ document.querySelector("#bouton_menu").addEventListener("click", function(){
     var ClickDessins = 0
     var ClickMaking = 0
 
+    /*
+
     // Section sites
     document.querySelector("#sites").addEventListener("click", ()=>{
 
@@ -49,6 +51,8 @@ document.querySelector("#bouton_menu").addEventListener("click", function(){
         }
         
     })
+    
+    */
 
     // Section Animations
     document.querySelector("#animations").addEventListener("click", ()=>{
@@ -64,6 +68,8 @@ document.querySelector("#bouton_menu").addEventListener("click", function(){
         }
 
     })
+
+    /*
 
     // Section Dessins
     document.querySelector("#dessins").addEventListener("click", ()=>{
@@ -94,6 +100,8 @@ document.querySelector("#bouton_menu").addEventListener("click", function(){
         }
 
     })
+
+    */
 
 
 
