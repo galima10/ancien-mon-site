@@ -152,6 +152,135 @@ h1{
 
 
 
+
+
+/* Page d'accueil */
+
+.h2{
+    font-size: 2.5em;
+    color: white;
+    text-decoration: underline;
+    position: relative;
+    left: 4em;
+    font-weight: bold;
+    margin-bottom: 2em;
+    margin-top: 3em;
+}
+.text_h2{
+    background-color: transparent;
+    width: 70%;
+    height: 13em;
+    margin-left: auto;
+    margin-right: auto;
+    border: .1em solid white;
+    overflow: hidden;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadre{
+    background-color: transparent;
+    width: 95%;
+    height: 90%;
+}
+.texte_cadre{
+    color: white;
+    font-size: 2em;
+}
+
+.EnsProfil{
+    margin-bottom: 20em;
+}
+
+
+.nouveaute{
+    margin-bottom: 20em;
+}
+.TitreNouv{
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 2em;
+    margin-bottom: 2em;
+}
+.pub{
+    height: 21em;
+    background-color: transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+    border: .15em solid white;
+    overflow: hidden;
+    position: relative;
+}
+.imgpub{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url('../images/bannière\ hist1\ chap1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.t_imgpub{
+    color: white;
+    position: absolute;
+    font-size: 2em;
+    bottom: 0;
+    left: 5em;
+}
+.lien_pub{
+    width: 7em;
+    height: 3em;
+    margin-top: 1.5em;
+    position: relative;
+    left: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: .8em;
+    text-decoration: none;
+}
+.lien_pub:hover{
+    transition: .5s;
+    transform: scale(1.05);
+    background-color: rgb(107, 130, 204);
+    opacity: 1;
+}
+.lien_pub:not(:hover){
+    transition: .5s;
+    background-color: rgb(107, 130, 204);
+    opacity: .6;
+}
+.t_lienpub{
+    color: white;
+    width: 85%;
+    height: 85%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Page Compétences */
 
 h2{
@@ -652,6 +781,51 @@ h2{
     }
     
     .TDescComp{
+        font-size: 1em;
+    }
+
+
+
+
+    .h2{
+        font-size: 1.5em;
+        left: 1em;
+    }
+    .text_h2{
+        width: 80%;
+        height: 10em;
+    }
+    .texte_cadre{
+        font-size: 1em;
+    }
+
+
+    .nouveaute{
+        margin-bottom: 20em;
+    }
+    .TitreNouv{
+        font-size: 1.5em;
+        left: 1em;
+    }
+    .pub{
+        height: 8em;
+        width: 100%;
+        border-radius: 1.5em;
+    }
+    .imgpub{
+        background-size: 100%;
+    }
+    .t_imgpub{
+        font-size: 1em;
+        left: 2em;
+    }
+    .lien_pub{
+        width: 5.5em;
+        height: 2.5em;
+        left: 1em;
+        border-radius: .7em;
+    }
+    .t_lienpub{
         font-size: 1em;
     }
     
